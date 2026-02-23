@@ -13,7 +13,7 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const apiUrl = 'https://driver-logs.onrender.com';
       const response = await fetch(`${apiUrl}/api/trips/calculate_route/`, {
         method: 'POST',
         headers: {
